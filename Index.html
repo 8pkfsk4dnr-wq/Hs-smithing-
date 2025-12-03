@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HS Smithing — Hand Forged Knives & Metalwork</title>
+  <meta name="description" content="HS Smithing — Blacksmithing, metalwork, welding, restorations and custom knives & swords." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="HS Smithing logo" class="logo" />
+        <div class="brand-text">
+          <h1>HS Smithing</h1>
+          <p class="tag">Blacksmithing • Custom Knives • Restorations</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Enquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h2>Hand-forged metalwork with modern precision</h2>
+        <p>Blacksmithing, welding, restorations and custom blades crafted in Ash Vale. Built to last — built to perform.</p>
+
+        <div class="hero-cta-row">
+          <a class="btn-primary" href="#contact">Request a Quote</a>
+          <a class="btn-outline" href="#work">View Work</a>
+        </div>
+
+        <ul class="quick-contact">
+          <li>Phone: <a href="tel:+447955789369">07955 789369</a></li>
+          <li>Email: <a href="mailto:hssmithingenquiries@gmail.com">hssmithingenquiries@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="feature-card">
+          <img src="images/work1.jpg" alt="Custom knife by HS Smithing" />
+          <figcaption>Signature custom knife — rough-forged, hand-finished</figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="services" class="container services">
+      <h3>Services</h3>
+      <div class="services-grid">
+        <article>
+          <h4>Custom Knives & Swords</h4>
+          <p>Design, forge and finish tailored blades — hunting, utility, and display pieces.</p>
+        </article>
+        <article>
+          <h4>Blacksmithing & Metalwork</h4>
+          <p>Gates, brackets, hardware and bespoke metalwork for home and business.</p>
+        </article>
+        <article>
+          <h4>Welding & Restorations</h4>
+          <p>Structural welding, repairs and restoration of vintage metalwork and tools.</p>
+        </article>
+        <article>
+          <h4>Commissioned Builds</h4>
+          <p>One-off commissions — we work from sketches or ideas and produce finished pieces.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="container gallery">
+      <h3>Recent Work</h3>
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/work1.jpg" alt="Custom knife close up" />
+          <figcaption>Custom knife — hand-sharpened and oil-finished</figcaption>
+        </figure>
+        <figure>
+          <img src="images/work2.jpg" alt="Forge and hammered steel" />
+          <figcaption>Forging process — hammered texture and heat treatment</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About HS Smithing</h3>
+      <p>HS Smithing is a small forge based in Ash Vale. We combine traditional blacksmithing techniques with modern finishing to produce durable, beautiful tools and bespoke metalwork. Every piece is hand-finished and inspected to ensure excellent form and function.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Enquiries & Quotes</h3>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>If you'd like a quote, describe your project and we'll reply quickly. For urgent enquiries call <a href="tel:+447955789369">07955 789369</a>.</p>
+          <ul>
+            <li><strong>Phone:</strong> <a href="tel:+447955789369">07955 789369</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hssmithingenquiries@gmail.com">hssmithingenquiries@gmail.com</a></li>
+            <li><strong>Location:</strong> Ash Vale, UK</li>
+          </ul>
+          <p class="small">We accept commissions for knives, swords and bespoke metal pieces. Tell us what you need and we'll outline next steps.</p>
+        </div>
+
+        <form id="enquiryForm" class="enquiry-form" onsubmit="return sendMail(event)">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" />
+
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Tell me about the project, materials, size, deadline, budget..."></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Send Enquiry</button>
+            <button type="button" class="btn-outline" onclick="clearForm()">Clear</button>
+          </div>
+
+          <p id="formNote" class="form-note">This form will open your email client with the enquiry prefilled (opens in Mail / Gmail). If you prefer, email: <a href="mailto:hssmithingenquiries@gmail.com">hssmithingenquiries@gmail.com</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> HS Smithing • <a href="mailto:hssmithingenquiries@gmail.com">hssmithingenquiries@gmail.com</a> • <a href="tel:+447955789369">07955 789369</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
